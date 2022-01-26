@@ -1,5 +1,5 @@
 import * as React from "react";
-import { makeStyles } from "@mui/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import Box from "@mui/material/Box";
 import { Container, Grid, Typography } from "@mui/material";
 import Link from "@mui/material/Link";
@@ -26,11 +26,12 @@ const useStyles = makeStyles({
     },
     logoGroup: {
         display: "flex",
+        marginLeft:"-9px",
         '@media (max-width: 350px)': {
             display: "block",
             with: "100%",
-            marginLeft:"-8px"
-           
+
+
         },
     },
     imgLogo: {

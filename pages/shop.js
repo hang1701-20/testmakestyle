@@ -8,7 +8,7 @@ import Container from "@mui/material/Container";
 import Typography from '@mui/material/Typography';
 import { Box } from '@mui/system';
 import Breadcrumbs from "@mui/material/Breadcrumbs";
-import { makeStyles } from '@mui/styles';
+import { makeStyles } from "@material-ui/core/styles";
 import Product from '../components/product';
 import Divider from '@mui/material/Divider';
 import { useRouter } from "next/router";
@@ -211,11 +211,11 @@ export default function Shop(props) {
               <ListItem disablePadding>
                 <ListItemButton className={classes.categoryText}>
                   <ListItemText  onClick={() => handleSubmit(`Smartphone`)} >
-                    Beauty, Health 
+                    Beauty, Health
                   </ListItemText>
-                  
+
                 </ListItemButton>
-             
+
               </ListItem>
               <Divider />
               <ListItem disablePadding>
@@ -223,9 +223,9 @@ export default function Shop(props) {
                   <ListItemText  onClick={() => handleSubmit(`Books`)} >
                   Book
                   </ListItemText>
-                  
+
                 </ListItemButton>
-                
+
               </ListItem>
               <Divider />
               <ListItem disablePadding>
@@ -233,19 +233,19 @@ export default function Shop(props) {
                   <ListItemText  onClick={() => handleSubmit(`Computer`)} >
                   Computer
                   </ListItemText>
-                  
+
                 </ListItemButton>
-               
+
               </ListItem>
               <Divider />
               <ListItem disablePadding>
-                <ListItemButton className={classes.categoryText}> 
+                <ListItemButton className={classes.categoryText}>
                   <ListItemText  onClick={() => handleSubmit(`Electronis`)} >
                   Electricis
                   </ListItemText>
-                  
+
                 </ListItemButton>
-                
+
               </ListItem>
               <Divider />
               <ListItem disablePadding>
@@ -253,9 +253,9 @@ export default function Shop(props) {
                   <ListItemText  onClick={() => handleSubmit(`Fashion`)}>
                   Fashion
                   </ListItemText>
-                  
+
                 </ListItemButton>
-               
+
               </ListItem>
               <Divider />
               <ListItem disablePadding>
@@ -264,7 +264,7 @@ export default function Shop(props) {
                   Food
                   </ListItemText>
                 </ListItemButton>
-               
+
               </ListItem>
               <Divider />
               <ListItem disablePadding>
@@ -273,7 +273,7 @@ export default function Shop(props) {
                   Jewelry
                   </ListItemText>
                 </ListItemButton>
-                
+
               </ListItem>
               <Divider />
               <ListItem disablePadding>
@@ -282,7 +282,7 @@ export default function Shop(props) {
                   Smartphone
                   </ListItemText>
                 </ListItemButton>
-                
+
               </ListItem>
               <Divider />
               <ListItem disablePadding>
@@ -291,7 +291,7 @@ export default function Shop(props) {
                   Sport
                   </ListItemText>
                 </ListItemButton>
-                
+
               </ListItem>
             </List>
           </Grid>

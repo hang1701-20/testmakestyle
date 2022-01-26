@@ -1,8 +1,8 @@
 import React from "react";
 import client from "../libs/apollo/ApolloClient";
 import gql from "graphql-tag";
-// import header footer all pages 
-import { makeStyles } from '@mui/styles';
+// import header footer all pages
+import { makeStyles } from "@material-ui/core/styles";
 import AddHead from "../components/AddHead";
 import SideBarTop from "../components/sidebar";
 import HeaderMid from "../components/HeaderMid";
@@ -13,7 +13,7 @@ import Container from "@mui/material/Container";
 
 
 const useStyles = makeStyles({
-    
+
 
 });
 

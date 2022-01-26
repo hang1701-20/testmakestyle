@@ -1,5 +1,5 @@
 import * as React from "react";
-import { makeStyles } from "@mui/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import Box from "@mui/material/Box";
 import { Typography } from "@mui/material";
 import Link from "@mui/material/Link";
@@ -64,35 +64,6 @@ const useStyles = makeStyles({
       transition: "width 2s"
     },
 
-  },
-  titleHome: {
-    fontFamily: 'Merriweather,sans-serif',
-    color: '#444444',
-    fontSize: '24px',
-    fontWeight: 'bold',
-    margin: '30px 0px 25px 0px',
-    '& span': {
-      position: 'relative',
-      display: 'inline-block',
-      '&::after': {
-        position: 'absolute',
-        content: '""',
-        width: '15px',
-        height: '1px',
-        left: '-30px',
-        top: '18px',
-        backgroundColor: `${colorHover}`,
-      },
-      '&::before': {
-        position: 'absolute',
-        content: '""',
-        width: '15px',
-        height: '1px',
-        right: '-30px',
-        top: '18px',
-        backgroundColor: `${colorHover}`,
-      }
-    }
   },
   titleHome: {
     fontFamily: 'Merriweather,sans-serif',

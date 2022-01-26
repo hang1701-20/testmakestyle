@@ -8,7 +8,7 @@ import { v4 } from 'uuid';
 import { Button, Grid } from '@mui/material';
 import { useMutation, useQuery } from '@apollo/client';
 import { removeItemFromCart } from '../../../function';
-import { makeStyles } from '@mui/styles';
+import { makeStyles } from "@material-ui/core/styles";
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';

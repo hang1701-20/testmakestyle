@@ -4,7 +4,7 @@ import Container from "@mui/material/Container";
 import Paper from "@mui/material/Paper";
 import Link from 'next/link';
 import Rating from '@mui/material/Rating';
-import { makeStyles } from '@mui/styles';
+import { makeStyles } from "@material-ui/core/styles";
 import { Box } from '@mui/system';
 
 const colorHeading = '#323232';

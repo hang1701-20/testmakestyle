@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { makeStyles } from "@mui/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import { Container, Grid, Paper } from '@mui/material';
 import { Box } from '@mui/system';
 import Typography from "@mui/material/Typography";
@@ -44,7 +44,7 @@ const useStyles = makeStyles({
         color:"#40c6ff",
         marginTop:"30px",
         marginBottom:"20px",
-        
+
     },
     textmain:{
         fontWeight:600,
@@ -55,7 +55,7 @@ const useStyles = makeStyles({
         margin:"auto",
         marginTop:"20px",
         marginBottom:"60px"
-       
+
     },
     titlemain:{
         fontSize:"24px"
@@ -78,17 +78,17 @@ export default function About() {
     return (
         <>
             <Container>
-                
-                
+
+
                 <Paper elevation={3} className={classes.pageThank} >
                     <Box className={classes.icon}>
                         <CheckCircleIcon className={classes.iconCheck}/>
                     </Box>
                     <Box className={classes.text}>
                         <Typography component="h4" variant="h4" className={classes.textmain}>Order confirmed</Typography>
-                        
+
                     </Box>
-                    <Box className={classes.title}> 
+                    <Box className={classes.title}>
                     <Typography component="p" variant="p" className={classes.titlemain}>You order is confirmed. You will receive an order confirmation email/SMS shortly with the expected delivery date for your items.</Typography>
                     </Box>
                     <Box className={classes.button} >
@@ -96,13 +96,13 @@ export default function About() {
                             <Link href="/shop" >
                                 <Button variant="contained" className={classes.viewOrder}>Continue Shopping</Button>
                             </Link>
-                            
+
                         </Box>
                         <Box  className={classes.buttonOrder}>
                             <Link href="/orders" >
                                 <Button variant="contained" className={classes.viewOrder}>View Order</Button>
                             </Link>
-                            
+
                         </Box>
                     </Box>
                 </Paper>

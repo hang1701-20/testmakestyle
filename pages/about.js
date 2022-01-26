@@ -1,5 +1,5 @@
 import * as React from "react";
-import { makeStyles } from "@mui/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
@@ -21,7 +21,7 @@ const useStyles = makeStyles({
   pageAbout: {
     marginBottom: "60px",
     minHeight: "200px",
-    backgroundImage: `url(${Banner.src})`,
+    backgroundImage:`url(${Banner.src})`,
     backgroundSize: "cover"
   },
 
@@ -37,8 +37,7 @@ const useStyles = makeStyles({
 
   rightTextPageAbout: {
     float: "right",
-    paddingTop: "12px",
-    paddingTop: "12px",
+    paddingTop:"12px",
     "@media (max-width: 768px)": {
       float: "inherit"
     }
@@ -93,7 +92,7 @@ const useStyles = makeStyles({
   job: {
     fontSize: "14px",
     lineHeight: "24px",
-    color: "#f9e1c3",
+    color: "#fff",
     margin: 0
   },
   content: {
@@ -114,24 +113,24 @@ const useStyles = makeStyles({
     lineHeight: "24px",
     color: "#999"
   },
-  profileOutTeam: {
-    display: "flex",
+  profileOutTeam:{
+    display:"flex",
     '@media (max-width: 768px)': {
-      display: "block"
-    }, '@media (max-width: 600px)': {
-      display: "block"
-    }
+      display:"block"
+  },'@media (max-width: 600px)': {
+    display:"block"
+}
   },
-  profile_item: {
-    display: "contents",
-    '@media (max-width: 768px)': {
-      display: "flex"
-    },
-    '@media (max-width: 600px)': {
-      display: "block"
-    },
+  profile_item:{
+    display:"contents",
+  '@media (max-width: 768px)': {
+    display:"flex"
   },
-  aboutIcon: {
+  '@media (max-width: 600px)': {
+    display:"block"
+},
+  },
+  aboutIcon:{
     border: "1px solid #fff",
     borderRadius: "40px",
     color: "#fff",
@@ -140,25 +139,25 @@ const useStyles = makeStyles({
     margin: "10px",
     background: "#40c6ff",
   },
-  textTile: {
+  textTile:{
     color: "white",
-    fontFamily: "Merriweather",
-    fontSize: "50px",
-    fontWeight: 700
+    fontFamily:"Merriweather",
+    fontSize:"50px",
+    fontWeight:700
   },
-  titleText: {
+  titleText:{
     color: "white",
-    fontFamily: "Muli",
-    fontWeight: 400,
-    fontSize: "14px"
+    fontFamily:"Muli",
+    fontWeight:400,
+    fontSize:"14px"
   },
-  textAbout_main: {
+  textAbout_main:{
     textAlign: "center",
     fontWeight: "700",
     lineHeight: "32px",
-    fontSize: "36px",
-    color: "#293544",
-    fontFamily: "Merriweather"
+    fontSize:"36px",
+    color:"#293544",
+    fontFamily:"Merriweather"
   }
 });
 
@@ -235,7 +234,7 @@ export default function About() {
             </Typography>
           </Grid>
           <Grid item xs={4} lg={4} sx={{ textAlign: "center" }}>
-            <ShoppingCartIcon className={classes.aboutIcon} />
+            <ShoppingCartIcon className={classes.aboutIcon}/>
             <Typography sx={{ fontWeight: "700" }} component="h5" variant="h5">
               250,000
             </Typography>
@@ -244,7 +243,7 @@ export default function About() {
             </Typography>
           </Grid>
           <Grid item xs={4} lg={4} sx={{ textAlign: "center" }}>
-            <PublicIcon className={classes.aboutIcon} />
+            <PublicIcon className={classes.aboutIcon}/>
             <Typography sx={{ fontWeight: "700" }} component="h5" variant="h5">
               6000+
             </Typography>
@@ -289,7 +288,7 @@ export default function About() {
             others.
           </Typography>
         </Box>
-        <Box sx={{ textAlign: "center", marginTop: "80px" }}>
+        <Box sx={{ textAlign: "center",marginTop:"80px" }}>
           <Typography
             className={classes.textAbout_main}
             component="h4"
@@ -311,144 +310,144 @@ export default function About() {
         </Box>
         <Grid className={classes.profileOutTeam} columns={{ xs: 4, sm: 6, md: 4, lg: 3 }}>
           <Box className={classes.profile_item}>
-            <Grid item lg={1} >
-              <Box className={classes.profileItem}>
-                <Grid className={classes.author}>
-                  <Box className={classes.logo}>
-                    <img
-                      className={classes.avartar}
-                      src={AboutTeam.src}
-                      alt="Philip Demarco"
-                    />
-                  </Box>
-                  <Grid className={classes.msTeamInfo}>
-                    <h3 className={classes.name}>Philip Demarco</h3>
-                    <p className={classes.job}>Business Analyst</p>
-                  </Grid>
-                </Grid>
-                <Box className={classes.content}>
-                  <Typography>
-                    By testing and launching new partners and internal tech
-                    solutions, he increases both efficiency and performance
-                  </Typography>
-                  <Grid className={classes.ourteamSocialShare}>
-                    <a href="https://facebook.com/">
-                      <i className="fa fa-facebook"></i>{" "}
-                    </a>
-                    <a href="https://twitter.com/">
-                      <i className="fa fa-twitter"></i>
-                    </a>
-                    <a href="https://google.com/">
-                      <i className="fa fa-google"></i>{" "}
-                    </a>
-                  </Grid>
+          <Grid item lg={1} >
+            <Box className={classes.profileItem}>
+              <Grid className={classes.author}>
+                <Box className={classes.logo}>
+                  <img
+                    className={classes.avartar}
+                    src={AboutTeam.src}
+                    alt="Philip Demarco"
+                  />
                 </Box>
-              </Box>
-            </Grid>
-            <Grid item lg={1}>
-              <Box className={classes.profileItem}>
-                <Grid className={classes.author}>
-                  <Box className={classes.logo}>
-                    <img
-                      className={classes.avartar}
-                      src={AboutTeam_1.src}
-                      alt="Philip Demarco"
-                    />
-                  </Box>
-                  <Grid className={classes.msTeamInfo}>
-                    <h3 className={classes.name}>Philip Demarco</h3>
-                    <p className={classes.job}>Business Analyst</p>
-                  </Grid>
+                <Grid className={classes.msTeamInfo}>
+                  <h3 className={classes.name}>Philip Demarco</h3>
+                  <p className={classes.job}>Business Analyst</p>
                 </Grid>
-                <Box className={classes.content}>
-                  <Typography>
-                    By testing and launching new partners and internal tech
-                    solutions, he increases both efficiency and performance
-                  </Typography>
-                  <Grid className={classes.ourteamSocialShare}>
-                    <a href="https://facebook.com/">
-                      <i className="fa fa-facebook"></i>{" "}
-                    </a>
-                    <a href="https://twitter.com/">
-                      <i className="fa fa-twitter"></i>
-                    </a>
-                    <a href="https://google.com/">
-                      <i className="fa fa-google"></i>{" "}
-                    </a>
-                  </Grid>
-                </Box>
+              </Grid>
+              <Box className={classes.content}>
+                <Typography>
+                  By testing and launching new partners and internal tech
+                  solutions, he increases both efficiency and performance
+                </Typography>
+                <Grid className={classes.ourteamSocialShare}>
+                  <a href="https://facebook.com/">
+                    <i className="fa fa-facebook"></i>{" "}
+                  </a>
+                  <a href="https://twitter.com/">
+                    <i className="fa fa-twitter"></i>
+                  </a>
+                  <a href="https://google.com/">
+                    <i className="fa fa-google"></i>{" "}
+                  </a>
+                </Grid>
               </Box>
-            </Grid>
+            </Box>
+          </Grid>
+          <Grid item lg={1}>
+            <Box className={classes.profileItem}>
+              <Grid className={classes.author}>
+                <Box className={classes.logo}>
+                  <img
+                    className={classes.avartar}
+                    src={AboutTeam_1.src}
+                    alt="Philip Demarco"
+                  />
+                </Box>
+                <Grid className={classes.msTeamInfo}>
+                  <h3 className={classes.name}>Philip Demarco</h3>
+                  <p className={classes.job}>Business Analyst</p>
+                </Grid>
+              </Grid>
+              <Box className={classes.content}>
+                <Typography>
+                  By testing and launching new partners and internal tech
+                  solutions, he increases both efficiency and performance
+                </Typography>
+                <Grid className={classes.ourteamSocialShare}>
+                  <a href="https://facebook.com/">
+                    <i className="fa fa-facebook"></i>{" "}
+                  </a>
+                  <a href="https://twitter.com/">
+                    <i className="fa fa-twitter"></i>
+                  </a>
+                  <a href="https://google.com/">
+                    <i className="fa fa-google"></i>{" "}
+                  </a>
+                </Grid>
+              </Box>
+            </Box>
+          </Grid>
           </Box>
           <Box className={classes.profile_item}>
-            <Grid item lg={1}>
-              <Box className={classes.profileItem}>
-                <Grid className={classes.author}>
-                  <Box className={classes.logo}>
-                    <img
-                      className={classes.avartar}
-                      src={AboutTeam_2.src}
-                      alt="Philip Demarco"
-                    />
-                  </Box>
-                  <Grid className={classes.msTeamInfo}>
-                    <h3 className={classes.name}>Philip Demarco</h3>
-                    <p className={classes.job}>Business Analyst</p>
-                  </Grid>
-                </Grid>
-                <Box className={classes.content}>
-                  <Typography>
-                    By testing and launching new partners and internal tech
-                    solutions, he increases both efficiency and performance
-                  </Typography>
-                  <Grid className={classes.ourteamSocialShare}>
-                    <a href="https://facebook.com/">
-                      <i className="fa fa-facebook"></i>{" "}
-                    </a>
-                    <a href="https://twitter.com/">
-                      <i className="fa fa-twitter"></i>
-                    </a>
-                    <a href="https://google.com/">
-                      <i className="fa fa-google"></i>{" "}
-                    </a>
-                  </Grid>
+          <Grid  item lg={1}>
+            <Box className={classes.profileItem}>
+              <Grid className={classes.author}>
+                <Box className={classes.logo}>
+                  <img
+                    className={classes.avartar}
+                    src={AboutTeam_2.src}
+                    alt="Philip Demarco"
+                  />
                 </Box>
-              </Box>
-            </Grid>
-            <Grid item lg={1} >
-              <Box className={classes.profileItem}>
-                <Grid className={classes.author}>
-                  <Box className={classes.logo}>
-                    <img
-                      className={classes.avartar}
-                      src={AboutTeam_3.src}
-                      alt="Philip Demarco"
-                    />
-                  </Box>
-                  <Grid className={classes.msTeamInfo}>
-                    <h3 className={classes.name}>Philip Demarco</h3>
-                    <p className={classes.job}>Business Analyst</p>
-                  </Grid>
+                <Grid className={classes.msTeamInfo}>
+                  <h3 className={classes.name}>Philip Demarco</h3>
+                  <p className={classes.job}>Business Analyst</p>
                 </Grid>
-                <Box className={classes.content}>
-                  <Typography>
-                    By testing and launching new partners and internal tech
-                    solutions, he increases both efficiency and performance
-                  </Typography>
-                  <Grid className={classes.ourteamSocialShare}>
-                    <a href="https://facebook.com/">
-                      <i className="fa fa-facebook"></i>{" "}
-                    </a>
-                    <a href="https://twitter.com/">
-                      <i className="fa fa-twitter"></i>
-                    </a>
-                    <a href="https://google.com/">
-                      <i className="fa fa-google"></i>{" "}
-                    </a>
-                  </Grid>
-                </Box>
+              </Grid>
+              <Box className={classes.content}>
+                <Typography>
+                  By testing and launching new partners and internal tech
+                  solutions, he increases both efficiency and performance
+                </Typography>
+                <Grid className={classes.ourteamSocialShare}>
+                  <a href="https://facebook.com/">
+                    <i className="fa fa-facebook"></i>{" "}
+                  </a>
+                  <a href="https://twitter.com/">
+                    <i className="fa fa-twitter"></i>
+                  </a>
+                  <a href="https://google.com/">
+                    <i className="fa fa-google"></i>{" "}
+                  </a>
+                </Grid>
               </Box>
-            </Grid>
+            </Box>
+          </Grid>
+          <Grid item lg={1} >
+            <Box className={classes.profileItem}>
+              <Grid className={classes.author}>
+                <Box className={classes.logo}>
+                  <img
+                    className={classes.avartar}
+                    src={AboutTeam_3.src}
+                    alt="Philip Demarco"
+                  />
+                </Box>
+                <Grid className={classes.msTeamInfo}>
+                  <h3 className={classes.name}>Philip Demarco</h3>
+                  <p className={classes.job}>Business Analyst</p>
+                </Grid>
+              </Grid>
+              <Box className={classes.content}>
+                <Typography>
+                  By testing and launching new partners and internal tech
+                  solutions, he increases both efficiency and performance
+                </Typography>
+                <Grid className={classes.ourteamSocialShare}>
+                  <a href="https://facebook.com/">
+                    <i className="fa fa-facebook"></i>{" "}
+                  </a>
+                  <a href="https://twitter.com/">
+                    <i className="fa fa-twitter"></i>
+                  </a>
+                  <a href="https://google.com/">
+                    <i className="fa fa-google"></i>{" "}
+                  </a>
+                </Grid>
+              </Box>
+            </Box>
+          </Grid>
           </Box>
         </Grid>
       </Container>

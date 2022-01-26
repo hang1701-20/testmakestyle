@@ -4,7 +4,7 @@ import { useState, useContext } from 'react';
 import { AppContext } from '../../libs/context/AppContext';
 import { addFirstProduct, updateCart } from '../../function';
 
-import { makeStyles } from '@mui/styles';
+import { makeStyles } from "@material-ui/core/styles";
 import { AppProvider } from '../../libs/context/AppContext';
 
 const colorHover = '#40c6ff';

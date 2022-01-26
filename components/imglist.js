@@ -1,5 +1,5 @@
 import * as React from "react";
-import { makeStyles } from "@mui/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import Box from "@mui/material/Box";
@@ -21,11 +21,11 @@ const useStyles = makeStyles({
     display:"flex",
     alignItems:"center",
     marginTop:'50px',
-    
+
     '@media (max-width: 768px)': {
       display:"block",
       alignItems:"inherit"
-      
+
   }
   },
   rowImage:{
@@ -35,7 +35,7 @@ const useStyles = makeStyles({
       display:"block",
       marginBottom:"30px"
 
-      
+
   }
   },
   box_1Image:{
@@ -57,13 +57,13 @@ const useStyles = makeStyles({
       paddingRight: "0px",
       marginBottom:"30px",
       paddingLeft: "0px",
-     
+
   },
   '@media (max-width: 600px)': {
     paddingLeft: "0px",
-    display:"block",    
+    display:"block",
 }
-    
+
   },
   box_2Image1:{
     paddingRight:"15px",
@@ -74,12 +74,12 @@ const useStyles = makeStyles({
   },
   },
   box_2Image2:{
-    paddingRight:"30px", 
+    paddingRight:"30px",
     '@media (max-width: 600px)': {
       paddingRight: "0px",
       marginBottom:"30px"
-     
-     
+
+
   },
   },
   box_3Image:{
@@ -91,9 +91,9 @@ const useStyles = makeStyles({
       marginBottom:"30px"
   },
   '@media (max-width: 600px)': {
-    paddingRight: "0px",    
+    paddingRight: "0px",
 }
-    
+
   },
   box_4Image:{
     paddingLeft: "15px",
@@ -101,7 +101,7 @@ const useStyles = makeStyles({
       width:"100%"
     },
     '@media (max-width: 600px)': {
-      paddingLeft: "0px",    
+      paddingLeft: "0px",
   }
   },
   Image:{
@@ -151,8 +151,8 @@ export default function NewImageList() {
                     </Link>
                 </Box>
             </Box>
-          </Box>  
-          
+          </Box>
+
         </Box>
 
 
@@ -168,17 +168,17 @@ export default function NewImageList() {
                 <img src={Image4.src} className={classes.Image}/>
                 </Link>
               </Box>
-            
+
           </Box>
           <Box className={classes.box_4Image}>
               <Box className={classes.box_Image}>
               <Link href=" /product/baby-hand-bell-rattlle/">
-                  <img src={Image8.src} className={classes.Image} />   
+                  <img src={Image8.src} className={classes.Image} />
                   </Link>
               </Box>
               <Box>
               <Link href="/product/american-humburger-with-salad/">
-                  <img src={Image9.src} className={classes.Image} />  
+                  <img src={Image9.src} className={classes.Image} />
                   </Link>
               </Box>
           </Box>
@@ -188,4 +188,3 @@ export default function NewImageList() {
     );
 }
 
-  

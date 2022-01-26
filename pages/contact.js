@@ -1,5 +1,5 @@
 import * as React from "react";
-import { makeStyles } from "@mui/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
@@ -111,9 +111,9 @@ import Banner from '../assets/img/banner_page.png';
 export default function ContactUS() {
   const classes = useStyles();
   return (
-    
+
     <>
-  
+
       <Box className={classes.pageAccout}>
         <Container>
           <Box className={classes.titlePage}>
@@ -128,7 +128,7 @@ export default function ContactUS() {
               <Box className={classes.rightTextPage}>
                 <Breadcrumbs sx={{ color: "white" }} aria-label="breadcrumb">
                   <Typography className={classes.titleText}
-                   
+
                     component="h6"
                     variant="h6"
                   >
@@ -136,7 +136,7 @@ export default function ContactUS() {
                   </Typography>
                   <Typography
                     className={classes.titleText}
-                    
+
                     component="h6"
                     variant="h6"
                   >
@@ -214,7 +214,7 @@ export default function ContactUS() {
                   className={classes.texticon}
                   component="h6"
                   variant="h6"
-                  
+
                 >
                   0-800-12-345-6 880
                 </Typography>
@@ -222,13 +222,13 @@ export default function ContactUS() {
               <Box sx={{ display: "flex" }}>
                 <AddLocationIcon className={classes.icon}
                   color="primary"
-                 
+
                 />
                 <Typography
                   className={classes.texticon}
                   component="h6"
                   variant="h6"
-                 
+
                 >
                   257 Charlington Gates Road Morrison, Nr. 568
                 </Typography>
@@ -241,7 +241,7 @@ export default function ContactUS() {
                   className={classes.texticon}
                   component="h6"
                   variant="h6"
-                  
+
                 >
                   info@jruitstemplate.com
                 </Typography>
@@ -250,7 +250,7 @@ export default function ContactUS() {
           </Grid>
         </Box>
       </Container>
-  
+
     </>
   );
 }

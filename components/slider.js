@@ -11,7 +11,7 @@ import Banner_3 from '../assets/img/banner3.png';
 
 
 // makestyle
-import { makeStyles } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyle_sliderHome = makeStyles({
   slider_images: {

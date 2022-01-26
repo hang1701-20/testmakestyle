@@ -1,5 +1,5 @@
 import * as React from "react";
-import { makeStyles } from "@mui/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import { Container, Grid, Link } from "@mui/material";
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
@@ -36,7 +36,7 @@ import Banner from '../assets/img/banner_page.png';
 function createData(image,name, quantity, price) {
     return { image,name, quantity, price };
   }
-  
+
   const rows = [
     createData(Image_1.src, "Iphone", 6.0, 24, 4.0),
     createData(Image_1.src, "swatch", 9.0, 37, 4.3),
@@ -52,7 +52,7 @@ const useStyles = makeStyles({
         background:`url(${Banner.src})`,
         backgroundSize: "cover"
       },
-    
+
       titlePage: {
         display: "flex",
         paddingTop: "75px",
@@ -61,7 +61,7 @@ const useStyles = makeStyles({
           display: "block"
         }
       },
-    
+
       rightTextPage: {
         paddingTop:"12px",
         float: "right",
@@ -84,10 +84,10 @@ const useStyles = makeStyles({
     order:{
         marginTop:40,
         marginBottom:50
-    },  
+    },
     formorder:{
-        border:"1px solid rgba(0, 0, 0, 0.12)", 
-        padding:"25px", 
+        border:"1px solid rgba(0, 0, 0, 0.12)",
+        padding:"25px",
         marginTop:"50px",
         marginLeft:"20px",
         marginRight:"20px",
@@ -121,7 +121,7 @@ const useStyles = makeStyles({
             with:"100%"
         }
     },
-    
+
     form:{
         textAlign: "center",
         position: "relative",
@@ -132,7 +132,7 @@ const useStyles = makeStyles({
         overflow: "hidden",
         color: "black",
         display:"contents",
-       
+
         '& li':{
             listStyleType: "none",
             fontSize: "15px",
@@ -146,7 +146,7 @@ const useStyles = makeStyles({
                 lineHeight: "30px",
                 display: "block",
                 fontSize: "20px",
-                
+
                 border:"1px dashed green",
                 borderRadius: "50%",
                 margin: "0 auto 15px auto",
@@ -163,7 +163,7 @@ const useStyles = makeStyles({
                 zIndex: "-1",
             }
         }
-    
+
     },
     step1:{
         color: "#2F8D46",
@@ -258,7 +258,7 @@ export default function Myorder() {
           </Box>
         </Container>
       </Box>
-  
+
       <Box className={classes.main_order} sx={{}}>
       <Grid item lg={2}>
           <Paper  elevation={3} className={classes.walletOrder} >
@@ -267,7 +267,7 @@ export default function Myorder() {
                     <Typography variant="h5" component="div">
                         Wallet
                     </Typography>
-           
+
                 </MenuItem>
                 <Divider />
                 <MenuItem>
@@ -296,15 +296,15 @@ export default function Myorder() {
                     <Typography variant="h5" component="div">
                         Profile
                     </Typography>
-                    
+
                 </MenuItem>
                 <MenuItem>
                    <ListItemText>Change Password</ListItemText>
-                    
+
                 </MenuItem>
                 <MenuItem>
                     <ListItemText>My orders</ListItemText>
-                    
+
                 </MenuItem>
                 <MenuItem>
                     <ListItemText>My Refunds</ListItemText>
@@ -401,7 +401,7 @@ export default function Myorder() {
                 </Paper>
               </Box>
           </Grid>
-          
+
               <Grid item lg={7}>
               <Box className={classes.orderDetail}>
               <Box sx={{ border: "1px solid rgba(0, 0, 0, 0.12) ", padding: "10px" }}>
@@ -443,7 +443,7 @@ export default function Myorder() {
                             August 26,2021
                             </Typography>
                         </MenuItem>
-                        <MenuItem>                                     
+                        <MenuItem>
                             <ListItemText>Order Time :</ListItemText>
                             <Typography variant="body2" color="text.secondary">
                             11.00 AM - 12.00 PM
@@ -480,7 +480,7 @@ export default function Myorder() {
 						</ul>
 					</form>
                 </Box>
-              
+
                 <TableContainer component={Paper} >
                     <Table  aria-label="a dense table">
                     <TableHead>
@@ -499,7 +499,7 @@ export default function Myorder() {
                             <TableCell component="th" scope="row">
                                 <Box sx={{display:"flex"}}>
                             <img src={row.image} className={classes.imageOrder}></img>
-                            <Typography>{row.name}</Typography> 
+                            <Typography>{row.name}</Typography>
                             </Box>
                             </TableCell>
                             <TableCell align="right">{row.quantity}</TableCell>
@@ -512,8 +512,8 @@ export default function Myorder() {
                 </Box>
                 </Box>
               </Grid>
-              
+
           </Box>
-          
+
           </>
   )}

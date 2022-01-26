@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import Image_1 from '../assets/img/deals_of_day_1.png';
 import Image_2 from '../assets/img/deals_of_day_2.png';
 import { Container } from "@mui/material";
-import { makeStyles } from '@mui/styles';
+import { makeStyles } from "@material-ui/core/styles";
 import Link from '@mui/material/Link';
 
 const colorHover = '#40c6ff';

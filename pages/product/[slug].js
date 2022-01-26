@@ -12,7 +12,7 @@ import Price from '../../components/single-product/price';
 import { ImageList } from '@mui/material';
 import { ImageListItem } from '@mui/material';
 import { Grid } from '@mui/material';
-import { makeStyles } from '@mui/styles';
+import { makeStyles } from "@material-ui/core/styles";
 import Rating from '@mui/material/Rating';
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Banner from '../../assets/img/banner_page.png';
@@ -177,18 +177,18 @@ const useStyle_productDetail = makeStyles({
         fontWeight: '500',
         fontFamily: 'Mulish,sans-serif',
     },
-    textTile:{
+    textTile: {
         color: "white",
-        fontFamily:"Merriweather",
-        fontSize:"50px",
-        fontWeight:700
-      },
-      titleText:{
+        fontFamily: "Merriweather",
+        fontSize: "50px",
+        fontWeight: 700
+    },
+    titleText: {
         color: "white",
-        fontFamily:"Muli",
-        fontWeight:400,
-        fontSize:"14px"
-      },
+        fontFamily: "Muli",
+        fontWeight: 400,
+        fontSize: "14px"
+    },
 })
 
 
@@ -306,9 +306,9 @@ export default function Product(props) {
                                                     <Link href={`/product/${item?.slug}`}>
                                                         <a>
                                                             <img
-                                                                src={`${item.image.sourceUrl}?w=164&h=164&fit=crop&auto=format`}
-                                                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                                                                alt={item.title}
+                                                                src={`${item?.image?.sourceUrl}?w=164&h=164&fit=crop&auto=format`}
+                                                                //srcSet={`${item?.image?.srcSet}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                                                alt={item?.title}
                                                                 loading="lazy" />
                                                         </a>
                                                     </Link>

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { makeStyles } from "@mui/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import Box from "@mui/material/Box";
@@ -18,10 +18,10 @@ const useStyles = makeStyles({
   wrapperImage:{
     display:"flex",
     marginTop:"50px",
-    
+
     '@media (max-width: 768px)': {
       display:"block",
-      
+
   }
 
   },
@@ -32,7 +32,7 @@ const useStyles = makeStyles({
       display:"block",
       marginBottom:"30px"
 
-      
+
   }
   },
   box_1Image:{
@@ -52,12 +52,12 @@ const useStyles = makeStyles({
     '@media (max-width: 768px)': {
       paddingRight: "0px",
       marginBottom:"30px"
-     
+
   },
   '@media (max-width: 600px)': {
-    paddingLeft: "0px",    
+    paddingLeft: "0px",
 }
-    
+
   },
   box_3Image:{
     paddingRight: "15px",
@@ -68,9 +68,9 @@ const useStyles = makeStyles({
       marginBottom:"30px"
   },
   '@media (max-width: 600px)': {
-    paddingRight: "0px",    
+    paddingRight: "0px",
 }
-    
+
   },
   box_4Image:{
     paddingLeft: "15px",
@@ -78,7 +78,7 @@ const useStyles = makeStyles({
       width:"100%"
     },
     '@media (max-width: 600px)': {
-      paddingLeft: "0px",    
+      paddingLeft: "0px",
   }
   },
   Image:{
@@ -95,7 +95,7 @@ export default function NewImageList() {
     return (
         <>
       <Box className={classes.wrapperImage}>
-        <Box className={classes.rowImage}>  
+        <Box className={classes.rowImage}>
           <Box className={classes.box_1Image}>
               <Box className={classes.box_Image}>
                 <Link href="/product/apple-iphone-7-plus">
@@ -107,7 +107,7 @@ export default function NewImageList() {
                   <img src={Image2.src} className={classes.Image} />
                   </Link>
               </Box>
-            
+
           </Box>
           <Box className={classes.box_2Image}>
             <Box>
@@ -131,17 +131,17 @@ export default function NewImageList() {
                 <img src={Image5.src} className={classes.Image}/>
                 </Link>
               </Box>
-            
+
           </Box>
           <Box className={classes.box_4Image}>
               <Box className={classes.box_Image}>
               <Link href="/product/dz09-smart-watch">
-                  <img src={Image6.src} className={classes.Image} />   
+                  <img src={Image6.src} className={classes.Image} />
                   </Link>
               </Box>
               <Box>
               <Link href="/product/lum-5d-mark-iv-dslr-camera">
-                  <img src={Image7.src} className={classes.Image} />  
+                  <img src={Image7.src} className={classes.Image} />
                   </Link>
               </Box>
           </Box>
@@ -151,4 +151,3 @@ export default function NewImageList() {
     );
 }
 
-  

@@ -6,7 +6,7 @@ import Container from "@mui/material/Container";
 import Typography from '@mui/material/Typography';
 import { Box } from '@mui/system';
 import Breadcrumbs from "@mui/material/Breadcrumbs";
-import { makeStyles } from '@mui/styles';
+import { makeStyles } from "@material-ui/core/styles";
 import Product from '../components/product';
 import Divider from '@mui/material/Divider';
 import { useRouter } from "next/router";
@@ -126,18 +126,18 @@ const useStyles_pageShop = makeStyles(theme => ({
     categoryText: {
         marginLeft: "-15px",
     },
-    textTile: {
+    textTile:{
         color: "white",
-        fontFamily: "Merriweather",
-        fontSize: "50px",
-        fontWeight: 700
-    },
-    titleText: {
+        fontFamily:"Merriweather",
+        fontSize:"50px",
+        fontWeight:700
+      },
+      titleText:{
         color: "white",
-        fontFamily: "Muli",
-        fontWeight: 400,
-        fontSize: "14px"
-    },
+        fontFamily:"Muli",
+        fontWeight:400,
+        fontSize:"14px"
+      },
 }))
 
 export default function Shop(props) {

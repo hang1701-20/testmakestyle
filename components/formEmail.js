@@ -1,10 +1,10 @@
 import React from 'react';
-import { makeStyles } from "@mui/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import Button from '@mui/material/Button';
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
-// import images 
+// import images
 import bgEmail from '../assets/img/bg-home1-newleter.png';
 import { Box, FormGroup, Input } from '@mui/material';
 
@@ -30,7 +30,7 @@ const useStylesEmail = makeStyles({
             display: 'inline-block',
         }
     },
-   
+
     text:{
         lineHeight: '35px',
         fontSize: "30px",
@@ -57,7 +57,7 @@ const useStylesEmail = makeStyles({
 
     formFields:{
         marginTop: "20px",
-        display:"block",    
+        display:"block",
     },
     formButton:{
         width: "20%",
@@ -96,16 +96,16 @@ export default function  NameForm() {
                         </Grid>
                         <Grid item lg={9} md={8}  >
                             <FormGroup  className={classes.formFields}>
-                                
+
                                 <input
                                     className={classes.formInput}
                                     type="text"
                                     name="email"
                                     placeholder="Enter your email"
-                                    validate 
+                                    validate
                                 />
                                     <Button className={classes.formButton} type="submit" color="primary">Subscribe</Button>
-                                
+
                             </FormGroup>
                         </Grid>
                     </Box>

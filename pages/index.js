@@ -108,8 +108,8 @@ const Home = (props) => {
           </Grid>
         </Container>
         <SellerImageList />
-        <Logo />
-        <NameForm />
+        <Logo/>
+        <NameForm/>
       </div>
     </AppProvider>
   )

@@ -25,7 +25,7 @@ import BookIcon from '@mui/icons-material/Book';
 import ListIcon from '@mui/icons-material/List';
 
 // makestyle
-import { makeStyles } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 
 const colorHover = '#40c6ff';
 const useStyle_category_header = makeStyles({

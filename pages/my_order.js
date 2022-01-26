@@ -1,5 +1,5 @@
 import * as React from "react";
-import { makeStyles } from "@mui/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import { Container, Grid, Link } from "@mui/material";
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
@@ -40,7 +40,7 @@ const steps = [
 function createData(image,name, quantity, price) {
     return { image,name, quantity, price };
   }
-  
+
   const rows = [
     createData(Image_1.src, "Iphone", 6.0, 24, 4.0),
     createData(Image_1.src, "swatch", 9.0, 37, 4.3),
@@ -67,8 +67,8 @@ const useStyles = makeStyles({
         marginBottom:50
     },
     formorder:{
-        border:"1px solid rgba(0, 0, 0, 0.12)", 
-        padding:"25px", 
+        border:"1px solid rgba(0, 0, 0, 0.12)",
+        padding:"25px",
         marginTop:"50px",
         marginLeft:"20px",
         marginRight:"20px"
@@ -88,7 +88,7 @@ export default function Myorder() {
     const classes = useStyles();
   return (
   <>
-  
+
       <Box className={classes.main_order} sx={{}}>
       <Grid item lg={2}>
           <Paper  elevation={3} className={classes.walletOrder} >
@@ -97,7 +97,7 @@ export default function Myorder() {
                     <Typography variant="h5" component="div">
                         Wallet
                     </Typography>
-           
+
                 </MenuItem>
                 <Divider />
                 <MenuItem>
@@ -126,15 +126,15 @@ export default function Myorder() {
                     <Typography variant="h5" component="div">
                         Profile
                     </Typography>
-                    
+
                 </MenuItem>
                 <MenuItem>
                    <ListItemText>Change Password</ListItemText>
-                    
+
                 </MenuItem>
                 <MenuItem>
                     <ListItemText>My orders</ListItemText>
-                    
+
                 </MenuItem>
                 <MenuItem>
                     <ListItemText>My Refunds</ListItemText>
@@ -231,7 +231,7 @@ export default function Myorder() {
                 </Paper>
               </Box>
           </Grid>
-          
+
               <Grid item lg={7}>
               <Box className={classes.orderDetail}>
               <Box sx={{ border: "1px solid rgba(0, 0, 0, 0.12) ", padding: "10px" }}>
@@ -298,8 +298,8 @@ export default function Myorder() {
                 </List>
 
                 <Box sx={{ paddingTop: "35px" }}>
-                    <Stepper activeStep={1} 
-                    alternativeLabel  
+                    <Stepper activeStep={1}
+                    alternativeLabel
                     variant="scrollable"
                     scrollButtons
                     allowScrollButtonsMobile>
@@ -310,7 +310,7 @@ export default function Myorder() {
                     ))}
                     </Stepper>
                 </Box>
-              
+
                 <TableContainer component={Paper} sx={{ marginTop: "50px" }}>
                     <Table  aria-label="a dense table">
                     <TableHead>
@@ -329,7 +329,7 @@ export default function Myorder() {
                             <TableCell component="th" scope="row">
                                 <Box sx={{display:"flex"}}>
                             <img src={row.image} className={classes.imageOrder}></img>
-                            <Typography>{row.name}</Typography> 
+                            <Typography>{row.name}</Typography>
                             </Box>
                             </TableCell>
                             <TableCell align="right">{row.quantity}</TableCell>
@@ -342,8 +342,8 @@ export default function Myorder() {
                 </Box>
                 </Box>
               </Grid>
-              
+
           </Box>
-          
+
           </>
   )}

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { makeStyles } from "@mui/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import { Container, Grid, Link } from "@mui/material";
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
@@ -30,7 +30,7 @@ const useStyles = makeStyles({
         backgroundImage:`url(${Banner.src})`,
         backgroundSize: "cover"
       },
-    
+
       titlePage: {
         display: "flex",
         paddingTop: "75px",
@@ -39,7 +39,7 @@ const useStyles = makeStyles({
           display: "block"
         }
       },
-    
+
       rightTextPage: {
         float: "right",
         paddingTop:"12px",
@@ -71,7 +71,7 @@ const useStyles = makeStyles({
     },
     formProfile:{
         marginTop:70,
-       
+
         padding:25
     },
     formNameProfile:{
@@ -151,7 +151,7 @@ export default function Profile() {
 
 
 
-  
+
   <Container direction="row">
       <Box className={classes.main_profile} sx={{}}>
       <Grid item lg={4}>
@@ -161,7 +161,7 @@ export default function Profile() {
                     <Typography variant="h5" component="div">
                         Wallet
                     </Typography>
-           
+
                 </MenuItem>
                 <Divider />
                 <MenuItem>
@@ -185,22 +185,22 @@ export default function Profile() {
             </MenuList>
           </Paper>
           <Paper  elevation={3} className={classes.profile} >
-              
-            
+
+
             <MenuList>
                 <MenuItem>
                     <Typography variant="h5" component="div">
                         Profile
                     </Typography>
-                    
+
                 </MenuItem>
                 <MenuItem>
                    <ListItemText>Change Password</ListItemText>
-                    
+
                 </MenuItem>
                 <MenuItem>
                     <ListItemText>My orders</ListItemText>
-                    
+
                 </MenuItem>
                 <MenuItem>
                     <ListItemText>My Refunds</ListItemText>
@@ -331,6 +331,6 @@ export default function Profile() {
       </Grid>
       </Box>
   </Container>
-  </>  
+  </>
   );
 }

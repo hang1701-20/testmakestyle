@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';import Banner from '../assets/img/banner_page.png';
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Grid from "@mui/material/Grid";
-import { makeStyles } from "@mui/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
     page: {
@@ -14,9 +14,9 @@ const useStyles = makeStyles({
         backgroundImage:`url(${Banner.src})`,
         backgroundSize: "cover"
       },
-    
+
       titlePage: {
-        
+
         display: "flex",
         paddingTop: "75px",
         paddingBottom: "75px",
@@ -24,7 +24,7 @@ const useStyles = makeStyles({
           display: "block"
         }
       },
-    
+
       rightTextPage: {
         paddingTop:"12px",
         float: "right",
@@ -49,7 +49,7 @@ const useStyles = makeStyles({
 const Cart = (props) => {
     const classes = useStyles();
 
-    
+
     return (
         <AppProvider>
             <Box className={classes.page}>
@@ -65,7 +65,7 @@ const Cart = (props) => {
             <Grid item lg={6}>
               <Box className={classes.rightTextPage}>
                 <Breadcrumbs sx={{ color: "white" }} aria-label="breadcrumb">
-               
+
                   <Typography
                     className={classes.titleText}
                     component="h6"
@@ -73,7 +73,7 @@ const Cart = (props) => {
                   >
                     Home
                   </Typography>
-                  
+
                   <Typography
                     className={classes.titleText}
                     component="h6"

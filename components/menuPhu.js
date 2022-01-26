@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 
 // makestyle
-import { makeStyles } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 const colorHover = '#40c6ff';
 const colorDefaul = '#666';
 

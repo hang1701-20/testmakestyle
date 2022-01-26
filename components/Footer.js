@@ -15,7 +15,7 @@ import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
 // makestyle
-import { makeStyles } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 
 const colorHeading = '#323232';
 const colorHover = '#40c6ff';

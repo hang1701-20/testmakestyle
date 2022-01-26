@@ -2,7 +2,7 @@ import { isEmpty, isArray } from 'lodash';
 import { useState, useRef } from 'react';
 
 // makestyle
-import { makeStyles } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyle_ImagesThumbnail = makeStyles({
     thumbnail_detail: {

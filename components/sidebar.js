@@ -9,9 +9,9 @@ import LanguageIcon from '@mui/icons-material/Language';
 import EditSharpIcon from '@mui/icons-material/EditSharp';
 import LoginSharpIcon from '@mui/icons-material/LoginSharp';
 // makestyle
-import { makeStyles } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 
-// import images 
+// import images
 import arrow_down from '../assets/img/arrow_down.png';
 
 const colorHeading = '#323232';
@@ -19,7 +19,7 @@ const colorHover = '#40c6ff';
 const colorDefaul = '#666';
 
 const useStyle_HeaderTop = makeStyles({
-  jss1: {
+  headerTop: {
     padding: '10px',
     backgroundColor: '#f3f3f3',
   },
@@ -28,7 +28,7 @@ const useStyle_HeaderTop = makeStyles({
     padding: '0px',
     margin: '0px',
     '& li': {
-      color: "#999",
+      color:"#999",
       float: 'left',
       padding: '0px 10px',
       position: 'relative',
@@ -152,7 +152,7 @@ const useStyle_HeaderTop = makeStyles({
 const SideBarTop = () => {
   const classes = useStyle_HeaderTop()
   return (
-    <div className={classes.jss1}>
+    <div className={classes.headerTop}>
       <Container>
         <Grid container spacing={2} >
           <Grid item sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }} md={6}>

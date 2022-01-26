@@ -7,7 +7,7 @@ import TableCell from '@mui/material/TableCell';
 import TableRow from '@mui/material/TableRow';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
-import { makeStyles } from '@mui/styles';
+import { makeStyles } from "@material-ui/core/styles";
 
 
 const useStyles_cartItem = makeStyles(theme => ({
@@ -80,7 +80,7 @@ const CartItem = ({
                     size='small'
                     type="number"
                     min="1"
-                   
+
                     value={productCount}
                     onChange={handleQtyChange}
                 />

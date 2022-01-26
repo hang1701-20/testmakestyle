@@ -2,7 +2,7 @@ import React from 'react';
 import { useContext } from 'react';
 import { AppContext, AppProvider } from '../../libs/context/AppContext';
 import Link from 'next/link';
-import { makeStyles } from '@mui/styles';
+import { makeStyles } from "@material-ui/core/styles";
 import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
 
 
@@ -41,10 +41,10 @@ const CartIcon = () => {
             <AppProvider>
                 <Link href="/cart" >
                     <div className={classes.containercart}>
-                        
+
                             <LocalMallOutlinedIcon />
                             {productsCount ? <span>{productsCount}</span> : ''}
-                        
+
                     </div>
                 </Link>
             </AppProvider>
