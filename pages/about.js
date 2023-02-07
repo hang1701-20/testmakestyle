@@ -182,8 +182,8 @@ export default function About() {
                     className={classes.titleText}
                     component="h6"
                     variant="h6"
-                  >
-                    Home
+                  > 
+                    Home 
                   </Typography>
                   <Typography
                     className={classes.titleText}
